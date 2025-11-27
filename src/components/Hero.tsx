@@ -1,6 +1,7 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Github, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import { useEffect, useRef } from "react";
+import profileImage from "@/assets/profile.png";
 
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -75,8 +76,8 @@ const Hero = () => {
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
               <div className="absolute inset-0 rounded-full neon-border animate-pulse"></div>
               <img
-                src="/placeholder.svg"
-                alt="Arahan Kujur"
+                src={profileImage}
+                alt="Arahan Kujur - AI Engineer and Game Developer"
                 className="w-full h-full rounded-full object-cover border-4 border-primary/20"
               />
               <div className="absolute inset-0 rounded-full bg-gradient-to-t from-primary/20 to-transparent"></div>
