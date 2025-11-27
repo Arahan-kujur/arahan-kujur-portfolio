@@ -72,22 +72,6 @@ const Certifications = () => {
           ))}
         </div>
 
-        {/* Certificate Image */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto"
-        >
-          <div className="glass-card p-4 neon-border">
-            <img
-              src="/placeholder.svg"
-              alt="Certifications"
-              className="w-full rounded-lg"
-            />
-          </div>
-        </motion.div>
       </div>
     </section>
   );
